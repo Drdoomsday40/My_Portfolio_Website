@@ -5,30 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucien's Portfolio</title>
     <link rel="stylesheet" href="My_Portfolio.css">
+    <link rel="icons" href="Icons">
 </head>
+<!-- to use live server, open file, then live server -->
 <body>
-    <div id="wrapper"> 
-        <div id= "top">
-            <div id= "pic">
-                <img src= "leon background face.png" id= "myPic" alt= "my pic">
-            </div>
-        </div>
-        <div id= "middle">
-            <div id="intro">
-                I have always possessed a deep desire to work with back-end software development including algorithms, data structures, and machine learning. My ultimate goal is to achieve a role in Full Stack Development. I provide strong leadership coaching to software engineers as a peer mentor or manager. I've learned to communicate complex concepts in terms everyone can understand whether technical or business environments. I greatly enjoy developing high-trust relationships in staff meetings and project facilitation that also assists in maintaining the projects' bottom line.
-            </div>
-            <div id= "downloads">
-                <button>
-                    Download Resume in PDF
-                </button>
-                <button>
-                    Download Resume in Word
-                </button>
-            </div>
-        </div>
-        <div id= "resume">
-            EDUCATION
+    <wrapper class="wrapper" id="wrapper"> 
+        <nav class="navBar" id="navBar">
+            <ul class="ulnavBar" id="ulnavBar">
+                <li class="linavBar home" id="linavBar"><a href="file:///C:/Users/drdoo/Desktop/Current%20Projects/Portfolio_Website/My_Portfolio.html">Home</a></li>
+                <li class="linavBar" id="linavBar"><a href="#intro">About Me</a></li>
+                <li class="linavBar" id="linavBar"><a href="#projects">My Projects</a></li>
+                <li class="linavBar" id="linavBar"><a href="#resume">My Resume</a></li>
+                <li class="linavBar" id="linavBar"><a href="#contact-lucien">Contact Lucien</a></li>
+            </ul>
+        </nav>
 
+        <background class="background" id= "top-pic">
+            <img src= "patrick-hendry-K8PQxP8i-qQ-unsplash.jpg" class="img" id= "sunPic" name="sunPic" alt= "a picture of a sun with its reflection on the ocean">
+        </background>
+
+        <h1 class="header about-me">About Lucien</h1>
+
+        <div id= "middle">
+            <p class="intro" id="intro">
+                I have always possessed a deep desire to work with back-end software development including algorithms, data structures, and machine learning. My ultimate goal is to achieve a role in Full Stack Development. I provide strong leadership coaching to software engineers as a peer mentor or manager. I've learned to communicate complex concepts in terms everyone can understand whether technical or business environments. I greatly enjoy developing high-trust relationships in staff meetings and project facilitation that also assists in maintaining the projects' bottom line.
+            </p>
+
+            <div class="downloads btn" id= "downloads">
+                <button class="btn" href="C:\Users\drdoo\Desktop\Job Search\Lucien Maurice Resume 5_26_2021.pdf" download rel="noopener noreferrer" target="_blank">
+                    Download Resume<br> in PDF
+                </button>
+                <br>
+                <button>
+                    Download Resume<br> in Word
+                </button>
+            </div>
+        </div>
+
+        <h2 class="header projects">
+            Luciens Projects
+        </h2>
+
+        <p class="projects" id="projects">
+            Projects listed here
+        </p>
+
+        <h3 class="header resume">
+            Luciens Resume
+        </h3>
+
+        <p class="resume" id= "resume">
+            EDUCATION
 West Valley College, Saratoga, CA 
 Certificate of Computer Science - Dec 2019
 		Coursework:   Assembly, C, C++ Data Structures, Algorithms, Python, Discrete 				Math, OOP, A.I., Container Classes, Pointers, Dynamic Arrays, Matrix’s, Linked Lists, 				Templates, Sorting, Binary Search, Binary Trees, Balanced Trees, AVL Trees, 					Hashing, Stack, Queue, Recursion, Deque, Bag, Unweighted Graphs, and 					Weighted Graphs
@@ -81,14 +108,50 @@ Psychwest Inc., Santa Clara, CA		 Assistant Regional Manager		    Nov 2016 - Nov
 Aspiranet, San Jose, CA			Intervention Specialist 		    Sep 2013 - Mar 2015
 •	Worked with five clients with Autism and developmental disabilities of different ages and ethnic groups
 •	Studied clients' case history and conferred with a case manager on implementation plans
+            <br><br>
+        </p>
 
-        </div>
-        <div id= "socialProfiles">
+        
+
+        <h4 class="header contact-lucien" id="contact-lucien" >
+            Contact Lucien
+        </h4>
+
+        <div class="socialProfiles links" id= "socialProfiles">
+            <a href="https://www.linkedin.com/in/lucien-maurice/">LinkedIn</a>
+            <a href="https://github.com/Drdoomsday40">Github</a>
             <a href="https://google.com">Google</a>
-            <a href="https://google.com">Google</a>
-            <a href="https://google.com">Google</a>
+            <br><br>
         </div>
 
-    </div>
+        <div id="message">
+            <form action="Email and messages here.txt" >
+            <label for="name">Please enter your name to be called by: </label>
+            <input type="text" name="name" id="name" class="input" placeholder="name here...">
+            <br>
+            <br>
+            <label for="cellphone">Please enter your phone number to be reached by: </label>
+            <input type="text" name="cellphone" id="cellphone" class="input" placeholder="phone number here..." required>
+            <br>
+            <br>
+            <label for="email">Write your email here: </label>
+            <input type="text" name="email" id="email" class="input" placeholder="email here..." required>
+            <br>
+            <br>
+            <label for="message">Write a short message to email to Lucien: </label>
+            <textarea name="message" id="message" cols="50" rows="10">Hello Lucien,
+
+
+            Thank you,
+            </textarea>
+            <br>
+            <button id="submit">Submit</button>
+            <br>
+            <br>
+            </form>
+        </div>
+
+        
+    </wrapper>
 </body>
 </html>
