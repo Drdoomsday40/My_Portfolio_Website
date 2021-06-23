@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucien's Portfolio</title>
+    <!-- <base href="https://www.lucientheprofessional.com/" target="_blank"> -->
+    <!-- <base href="http://127.0.0.1:5500/My_Portfolio.html#contact-lucien" target="_blank"> -->
     <link rel="stylesheet" href="My_Portfolio.css">
     <link rel="icons" href="Icons">
+
 </head>
 <!-- to use live server, open file, then live server 
     on github, after git add -A, git commit,
     ESCAPE, COLON, WQ
 -->
-<body>
-    <wrapper class="wrapper" id="wrapper"> 
+<body class="body" id="body">
+    <div class="wrapper" id="wrapper"> 
         <nav class="navBar" id="navBar">
             <ul class="ulnavBar" id="ulnavBar">
                 <li class="linavBar home" id="linavBar"><a href="file:///C:/Users/drdoo/Desktop/Current%20Projects/Portfolio_Website/My_Portfolio.html">Home</a></li>
@@ -31,7 +34,7 @@
 
         <div id= "middle">
             <p class="intro" id="intro">
-                I have always possessed a deep desire to work with back-end software development including algorithms, data structures, and machine learning. My ultimate goal is to achieve a role in Full Stack Development. I provide strong leadership coaching to software engineers as a peer mentor or manager. I've learned to communicate complex concepts in terms everyone can understand whether technical or business environments. I greatly enjoy developing high-trust relationships in staff meetings and project facilitation that also assists in maintaining the projects' bottom line.
+                I am preparing myself towards becoming a front-end developer to help break into the industry.  I find the purpose in determining which UX/UI design to be an intriguing process I have always been facinated by.  Although I am currently pursuing a career in front-end development, I have always possessed a deep desire to work with back-end software development including algorithms, data structures, and machine learning. My ultimate goal is to achieve a role in Full Stack Development. I provide strong leadership coaching to software engineers as a peer mentor or manager. I've learned to communicate complex concepts in terms everyone can understand whether technical or business environments. I greatly enjoy developing high-trust relationships in staff meetings and project facilitation that also assists in maintaining the projects' bottom line.
             </p>
 
             <div class="downloads btn" id= "downloads">
@@ -58,7 +61,6 @@
         </h3>
 
         <p class="resume" id= "resume">
-            test here
             EDUCATION
 West Valley College, Saratoga, CA 
 Certificate of Computer Science - Dec 2019
@@ -128,34 +130,34 @@ Aspiranet, San Jose, CA			Intervention Specialist 		    Sep 2013 - Mar 2015
             <br><br>
         </div>
 
-        <div id="message">
+        <div class="fieldset" id="fieldset">
             <form action="Email and messages here.txt" >
-            <label for="name">Please enter your name to be called by: </label>
-            <input type="text" name="name" id="name" class="input" placeholder="name here...">
-            <br>
-            <br>
-            <label for="cellphone">Please enter your phone number to be reached by: </label>
-            <input type="text" name="cellphone" id="cellphone" class="input" placeholder="phone number here..." required>
-            <br>
-            <br>
-            <label for="email">Write your email here: </label>
-            <input type="text" name="email" id="email" class="input" placeholder="email here..." required>
-            <br>
-            <br>
-            <label for="message">Write a short message to email to Lucien: </label>
-            <textarea name="message" id="message" cols="50" rows="10">Hello Lucien,
-
-
-            Thank you,
-            </textarea>
-            <br>
-            <button id="submit">Submit</button>
-            <br>
-            <br>
+                <fieldset>
+                    <label for="name">Please enter your name to be called by: </label>
+                    <input type="text" name="name" id="name" class="input" placeholder="name here...">
+                    <br>
+                    <br>
+                    <label for="cellphone">Please enter your phone number to be reached by: </label>
+                    <input type="text" name="cellphone" id="cellphone" class="input" placeholder="phone number here..." required>
+                    <br>
+                    <br>
+                    <label for="email">Write your email here: </label>
+                    <input type="text" name="email" id="email" class="input" placeholder="email here..." required>
+                    <br>
+                    <br>
+                    <label for="message">Write a short message to email to Lucien: </label>
+                    <textarea name="message" id="message" cols="50" rows="10">Hello Lucien,
+        
+        
+                    Thank you,
+                    </textarea>
+                    <br>
+                    <button id="submit">Submit</button>
+                    <br>
+                    <br>
+                </fieldset>
             </form>
         </div>
-
-        
-    </wrapper>
+    </div>
 </body>
 </html>
