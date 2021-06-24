@@ -59,18 +59,18 @@ h1{
 }
 p.intro{
     height: 100;
-    width: 50%;
+    width: 45%;
     left: 25%;
     position: relative;
     display: inline-block;
 }
-.downloads {
-    display: inline;
+.middle .button {
+    /* display: inline; */
     /* display: center ; */
-    vertical-align: top;
-    position: absolute;
+    /* vertical-align: top; */
+    position: relative;
     /* white-space: nowrap; */
-    right: 20px;
+    left: 870px;
 }
 h2.header{
     text-align: center;
