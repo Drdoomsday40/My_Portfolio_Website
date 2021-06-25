@@ -57,20 +57,37 @@ nav ul li.linavBar:hover {
 h1{
     text-align: center;
 }
-p.intro{
-    height: 100;
+.middle{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row-reverse;
+    
+}
+.middle .intro .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 45%;
-    left: 25%;
-    position: relative;
+    background-color: blue;
+    /* left: 25%; */
+    /* position: relative; */
     display: inline-block;
 }
-.middle .button {
+.button .button {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
     /* display: inline; */
     /* display: center ; */
     /* vertical-align: top; */
-    position: relative;
+    /* position: relative; not needed for flex display*/
     /* white-space: nowrap; */
-    left: 870px;
+    right: 20px;
+    /* object-fit: cover; only for img or video*/
+    box-sizing: border-box;
 }
 h2.header{
     text-align: center;
